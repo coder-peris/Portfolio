@@ -98,9 +98,9 @@ const Contact: FC = (): ReactNode => {
               </Link>
             </li>
             <li className="flex items-center gap-2">
-              <Link href="https://linkedin.com/in/peris-raj-kc-5a0688242/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Link href="https://linkedin.com/in/coder-peris/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <FaLinkedin className="w-5 h-5 text-[#0077B5]" />
-                <span className="hover:underline">linkedin/peris-raj-kc-5a0688242</span>
+                <span className="hover:underline">linkedin/coder-peris</span>
               </Link>
             </li>
             <li className="flex items-center gap-2">
