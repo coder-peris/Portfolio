@@ -39,7 +39,7 @@
   --primary: #3b5bfd;
   --primary-foreground: #f0f9ff;
 
-  --imgmask: rgba(0, 0, 0, 0.093);
+  --imgmask: rgba(0, 0, 0, 0);
 
   --secondary: #56c4e0;
   --secondary-foreground: #1d1f21;
@@ -65,7 +65,7 @@
   --card: #1c1c1c;
   --card-foreground: #ffffff;
 
-  --imgmask: rgba(0, 0, 0, 0.501);
+  --imgmask: rgba(0, 0, 0, 0.25);
 
   --primary: #4c75ff;
   --primary-foreground: #ffffff;
