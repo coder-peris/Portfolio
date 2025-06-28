@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning className="scroll-smooth">
-			<body className="antialiased flex flex-col">
+			<body className="antialiased">
 				<ThemeProvider attribute="class" defaultTheme="dark">
 					<Toaster duration={2500} position="bottom-center" richColors />
 					<Navbar />

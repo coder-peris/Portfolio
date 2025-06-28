@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -65,7 +67,7 @@
   --card: #1c1c1c;
   --card-foreground: #ffffff;
 
-  --imgmask: rgba(0, 0, 0, 0.25);
+  --imgmask: rgba(0, 0, 0, 0.1);
 
   --primary: #4c75ff;
   --primary-foreground: #ffffff;
