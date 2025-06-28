@@ -39,7 +39,7 @@ const About: FC = (): ReactNode => {
 									Workalaya R. & D. Pvt. Ltd, Kupondole, Lalitpur
 								</p>
 								<p className="text-muted-foreground">
-									Web Development Intern <em>(March 2025 - Present)</em>
+									Web Development Intern <em>(March 2025 - June 2025)</em>
 								</p>
 							</li>
 						</ul>

@@ -11,7 +11,7 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   {
-    ignores: ["node_modules/", ".next/"], // Add ignored folders here
+    ignores: ["node_modules/", ".next/"], // Ignored folders
   },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
