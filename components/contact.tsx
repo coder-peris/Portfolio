@@ -41,7 +41,6 @@ const Contact: FC = (): ReactNode => {
       errors.emailField = "Enter a valid email address";
     }
 
-    setFormErr(errors);
     const hasErrors = Object.values(errors).some((msg) => msg !== "");
     if (hasErrors) {
       setFormErr(errors);
@@ -88,25 +87,25 @@ const Contact: FC = (): ReactNode => {
             <li className="flex gap-2 items-center">
               <Link href="mailto:periskc2@gmail.com" className="flex items-center gap-2">
                 <TbMail className="h-5 w-5 text-[#bc4b17]" />
-                <span className="hover:underline">periskc2@gmail.com</span>
+                <span className="hover:underline underline-offset-4">periskc@gmail.com</span>
               </Link>
             </li>
             <li className="flex gap-2 items-center">
               <Link href="https://github.com/coder-peris/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <FaGithub className="h-5 w-5" />
-                <span className="hover:underline">github/coder-peris</span>
+                <span className="hover:underline underline-offset-4">github/coder-peris</span>
               </Link>
             </li>
             <li className="flex items-center gap-2">
               <Link href="https://linkedin.com/in/coder-peris/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <FaLinkedin className="w-5 h-5 text-[#0077B5]" />
-                <span className="hover:underline">linkedin/coder-peris</span>
+                <span className="hover:underline underline-offset-4">linkedin/coder-peris</span>
               </Link>
             </li>
             <li className="flex items-center gap-2">
               <Link href="https://facebook.com/peris.kc.1/" target="_blank" className="flex items-center gap-2">
                 <FaFacebookSquare className="w-5 h-5 text-[#1877F2]" />
-                <span className="hover:underline">facebook/periskc1</span>
+                <span className="hover:underline underline-offset-4">facebook/peris.kc.1</span>
               </Link>
             </li>
           </ul>

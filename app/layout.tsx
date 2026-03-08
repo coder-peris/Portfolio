@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning className="scroll-smooth">
 			<body className="antialiased">
-				<ThemeProvider attribute="class" defaultTheme="dark">
+				<ThemeProvider attribute="class" defaultTheme="system">
 					<Toaster duration={2500} position="bottom-center" richColors />
 					<Navbar />
 					{children}

@@ -17,11 +17,15 @@ const Navbar: FC = (): ReactNode => {
 
 	return (
 		<header className="sticky top-0 z-1 w-full border-b border-muted-foreground/50 bg-background/90 backdrop-blur">
-			<div className="h-12 sm:h-16 flex flex-row justify-between items-center max-w-5xl mx-auto">
+			<div className="h-12 sm:h-16 flex flex-row justify-between items-center max-w-5xl mx-auto px-4 2xl:px-0 relative">
 
-				<nav className="pl-4 flex items-center gap-4 md:gap-16 text-md text-foreground/80 font-medium">
+				<nav className=" flex items-center gap-4 md:gap-16 text-md text-foreground/80 font-medium">
 					{navItems.map((x, idx) =>
-						<Link key={idx} href={x.href} className="transition-colors hover:text-foreground">
+						<Link
+							key={idx}
+							href={x.href}
+							className="transition-colors hover:text-foreground"
+						>
 							{x.label}
 						</Link>
 					)}

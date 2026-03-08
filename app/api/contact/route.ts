@@ -15,14 +15,14 @@ export async function POST(req: NextRequest) {
 
   try {
     await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO,
+      from: `${fullName} <${process.env.EMAIL_USER}>`,
+      replyTo: `"${fullName}" <${email}>`,
+      to: process.env.EMAIL_USER,
       subject: "Message from Portfolio",
       text: `Name: ${fullName}\nEmail: ${email}\nMessage:\n${message}`,
     });
     return NextResponse.json({ success: true }, { status: 200 });
-  }
-  catch {
+  } catch {
     return NextResponse.json({ success: false }, { status: 500 });
   }
-};
+}
