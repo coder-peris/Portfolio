@@ -42,6 +42,22 @@ const About: FC = (): ReactNode => {
 									Web Development Intern <em>(March 2025 - June 2025)</em>
 								</p>
 							</li>
+							<li>
+								<p className="font-medium">
+									Protozoa Host, Maitidevi, Ktm
+								</p>
+								<p className="text-muted-foreground">
+									Full Stack Developer <em>(July 2025 - September 2025)</em>
+								</p>
+							</li>
+							<li>
+								<p className="font-medium">
+									Midnight Innovations, Bishalnagar, Ktm
+								</p>
+								<p className="text-muted-foreground">
+									Full Stack Developer <em>(January 2026 - Present)</em>
+								</p>
+							</li>
 						</ul>
 					</article>
 					<article>

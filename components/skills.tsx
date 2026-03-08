@@ -9,6 +9,7 @@ import { TiHtml5 } from "react-icons/ti";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBinaryTree, TbRegex } from 'react-icons/tb';
 import { PiMathOperationsBold } from 'react-icons/pi';
+import { SiNestjs } from "react-icons/si";
 
 const Skills: FC = (): ReactNode => {
 
@@ -31,11 +32,11 @@ const Skills: FC = (): ReactNode => {
   ];
 
   const backendSkills: skill[] = [
-    { name: "Django", icon: <SiDjango className="text-[#1a6348]" /> },
     { name: "Node JS", icon: <FaNode className="text-[#339933]" /> },
+    { name: "Nest JS", icon: <SiNestjs className="text-[#E0234E]" /> },
     { name: "Express JS", icon: <SiExpress className="text-muted-foreground" /> },
+    { name: "Django", icon: <SiDjango className="text-[#1a6348]" /> },
     { name: "JWT Auth", icon: <SiJsonwebtokens className="text-[#dc1818]" /> },
-    { name: "PHP", icon: <FaPhp className="text-[#8892BE]" /> },
     { name: "REST API", icon: <BiCodeBlock className="text-[#cbce44]" /> },
     { name: "MySQL", icon: <SiMysql className="text-[#00758F]" /> },
   ];
