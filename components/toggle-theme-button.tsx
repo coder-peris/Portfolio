@@ -5,7 +5,7 @@ import { IoSunnyOutline as Sun, IoMoonOutline as Moon } from "react-icons/io5";
 import { useState, useRef, useEffect } from "react";
 
 const ToggleThemeButton: FC = (): ReactNode => {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, theme, setTheme } = useTheme();
   const [showPopup, setShowPopup] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
 
@@ -22,15 +22,15 @@ const ToggleThemeButton: FC = (): ReactNode => {
   return (
     <>
       <Button
-        title={theme === "dark" ? "Switch to light mode." : "Switch to dark mode."}
+        title={resolvedTheme === "dark" ? "Switch to light mode." : "Switch to dark mode."}
         variant="outline"
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
         onContextMenu={(e) => {
           e.preventDefault();
           setShowPopup(true);
         }
         }
-        className="mr-4 border-border"
+        className="border-border"
       >
         <span className="py-1 flex sm:hidden">
           {theme !== "light" ? <Sun /> : <Moon />}
@@ -42,16 +42,19 @@ const ToggleThemeButton: FC = (): ReactNode => {
 
       {showPopup && (
         <div ref={popupRef} className="bg-muted absolute top-12 right-4 mt-1 w-32 rounded-md border border-border bg-popover shadow-md z-50">
-          {(["system", "light", "dark"] as const).map((t) => (
+          {["System theme", "Light mode", "Dark mode"].map((t) => (
             <button
               key={t}
-              onClick={() => { setTheme(t); setShowPopup(false); }}
-              className={`w-full px-3 py-2 text-left text-sm capitalize hover:bg-accent ${theme === t ? "font-semibold text-primary" : ""}`}
+              onClick={() => {
+                setTheme(t.split(" ")[0].toLowerCase());
+                setShowPopup(false);
+              }}
+              className={`w-full px-3 py-2 text-left text-sm capitalize hover:bg-accent ${theme === t.split(" ")[0].toLowerCase() && "font-semibold text-primary"}`}
             >
               {t}
             </button>
           ))}
-        </div>
+        </div >
       )}
     </>
   );
