@@ -85,7 +85,7 @@ const Contact: FC = (): ReactNode => {
           </p>
           <ul className="space-y-2 mt-4">
             <li className="flex gap-2 items-center">
-              <Link href="mailto:periskc2@gmail.com" className="flex items-center gap-2">
+              <Link href="mailto:periskc@gmail.com" className="flex items-center gap-2">
                 <TbMail className="h-5 w-5 text-[#bc4b17]" />
                 <span className="hover:underline underline-offset-4">periskc@gmail.com</span>
               </Link>
